@@ -1,4 +1,4 @@
-## fetchConf
+## Conference Calendar
 
 Adds events from selected conference categories to Google calendar
 
@@ -16,10 +16,12 @@ Adds events from selected conference categories to Google calendar
 
 ### Running
 Run the program using the following command:
-`python fetchConf.py --cat <category>`
+`python fetchConf.py --cat "<category>"`
 
 This will fetch all the events for this category from confsearch.org and create calendar events for their deadlines in your primary calendar.
 Only primary calendar is supported at the moment.
+
+Remember to put category in quotes since this will handle the case when there is a space involved in the name of category.
 
 The list of available categories can be fetched using
 `python fetchConf.py --list`
